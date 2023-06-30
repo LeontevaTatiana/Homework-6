@@ -1,10 +1,11 @@
 package ru.netology.stats;
+
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class StatsServiceTest {
     @Test
-    public void testSum () {
+    public void testSum() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.sum(sales);
@@ -13,7 +14,7 @@ public class StatsServiceTest {
     }
 
     @Test
-    public void testAverage () {
+    public void testAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.average(sales);
@@ -23,7 +24,7 @@ public class StatsServiceTest {
 
 
     @Test
-    public void testMaxSales () {
+    public void testMaxSales() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.maxSales(sales);
@@ -33,7 +34,7 @@ public class StatsServiceTest {
 
 
     @Test
-    public void testMinSales () {
+    public void testMinSales() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.minSales(sales);
@@ -43,7 +44,7 @@ public class StatsServiceTest {
 
 
     @Test
-    public void testBelowTheAverage () {
+    public void testBelowTheAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.belowTheAverage(sales);
@@ -53,7 +54,7 @@ public class StatsServiceTest {
 
 
     @Test
-    public void testAboveAverage () {
+    public void testAboveAverage() {
         StatsService service = new StatsService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         long actual = service.aboveAverage(sales);

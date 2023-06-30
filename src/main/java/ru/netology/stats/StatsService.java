@@ -38,21 +38,23 @@ public class StatsService {
     }
 
 
-public int belowTheAverage(long[] sales){
+    public int belowTheAverage(long[] sales) {
         int belowMonth = 0;
-    for (long sale : sales) {
-        if (sale < average(sales)) {
-            belowMonth = belowMonth + 1;
-        }
-    }
-    return belowMonth;
-}
-
-
-    public int aboveAverage(long[] sales){
-        int aboveMonth = 0;
+        long averageSale = average(sales);
         for (long sale : sales) {
             if (sale < average(sales)) {
+                belowMonth = belowMonth + 1;
+            }
+        }
+        return belowMonth;
+    }
+
+
+    public int aboveAverage(long[] sales) {
+        int aboveMonth = 0;
+        long averageSale = average(sales);
+        for (long sale : sales) {
+            if (sale > average(sales)) {
                 aboveMonth = aboveMonth + 1;
             }
         }
