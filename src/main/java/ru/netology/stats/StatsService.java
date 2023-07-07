@@ -42,7 +42,7 @@ public class StatsService {
         int belowMonth = 0;
         long averageSale = average(sales);
         for (long sale : sales) {
-            if (sale < average(sales)) {
+            if (sale < averageSale) {
                 belowMonth = belowMonth + 1;
             }
         }
@@ -54,7 +54,7 @@ public class StatsService {
         int aboveMonth = 0;
         long averageSale = average(sales);
         for (long sale : sales) {
-            if (sale > average(sales)) {
+            if (sale > averageSale) {
                 aboveMonth = aboveMonth + 1;
             }
         }
